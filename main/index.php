@@ -2,6 +2,8 @@
 require '/var/www/crudapp/config/fetch.php';
 
 foreach ($datas as $row) {
-	echo htmlspecialchars($row['Name']) . "<br>";
-	echo htmlspecialchars($row['Age']) . "<br>";
+<tr>
+                    <td><?= htmlspecialchars($row['Name']) ?></td>
+                    <td><?= htmlspecialchars($row['Age']) ?></td>
+</tr>
 }
