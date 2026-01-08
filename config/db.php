@@ -11,7 +11,7 @@ $dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
 $user = 'neondb_owner';
 $pass = 'npg_z9PjKMr5dUWa';
 
-// PDO Connection variable
+// PDO Connection variable => PDO(dsn,user,password,option(like error mode etc))
 $pdo = new PDO($dsn,$user,$pass);
 
 // test connection
