@@ -20,5 +20,5 @@ try{
     echo "Connected";
 }
 catch (PDOException $e){
-    echo "Error";
+    echo "Error". $e->getMessage();
 }
