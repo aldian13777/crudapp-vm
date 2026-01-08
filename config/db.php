@@ -12,7 +12,9 @@ $user = 'neondb_owner';
 $pass = 'npg_z9PjKMr5dUWz';
 
 // PDO Connection variable
-$pdo = new PDO($dsn,$user,$pass);
+$pdo = new PDO($dsn,$user,$pass,[
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]);
 
 // test connection
 try{
