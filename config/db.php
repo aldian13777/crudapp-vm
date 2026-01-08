@@ -19,5 +19,8 @@ try{
     $pdo;
     echo "Connected";
 }
+catch (PDOException $e){
+     echo "Error"; 
+    }
 
 //for error catching, use $pdo variable inside try...catch flow
