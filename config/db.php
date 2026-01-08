@@ -12,15 +12,12 @@ $user = 'neondb_owner';
 $pass = 'npg_z9PjKMr5dUWa';
 
 // PDO Connection variable
-$pdo = new PDO($dsn,$user,$pass,[
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-    ]);
+$pdo = new PDO($dsn,$user,$pass)
 
 // test connection
 try{
     $pdo;
     echo "Connected";
 }
-catch (PDOException $e){
-    echo "Error". $e->getMessage();
-}
+
+//for error catching, use $pdo variable inside try...catch flow
