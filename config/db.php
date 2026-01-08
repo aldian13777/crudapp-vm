@@ -9,7 +9,7 @@ $dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
 
 // Database user & pass
 $user = 'neondb_owner';
-$pass = 'npg_z9PjKMr5dUWz';
+$pass = 'npg_z9PjKMr5dUWa';
 
 // PDO Connection variable
 $pdo = new PDO($dsn,$user,$pass,[
